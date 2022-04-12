@@ -1,6 +1,9 @@
 :root {
-  --second-main-color: #212121;
-  --btn-link-color: #2196f3;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --interactive-main-title: #ffffff;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --background-color: #2f303a;
 }
 
 body {
@@ -19,7 +22,25 @@ body {
 
 .link:hover,
 .link:focus {
-  color: var(--btn-link-color);
+  color: var(--accent-color);
+}
+
+.main-img-size {
+  width: 370px;
+  height: 294px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .logo {
@@ -51,9 +72,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+/*-------------------------INDEX.HTML--------------------*/
 /*-------------------------HEADER--------------------*/
 .header-logo-beginning {
-  color: var(--btn-link-color);
+  color: var(--accent-color);
 }
 
 .header-logo-end {
@@ -62,7 +84,7 @@ body {
 
 /* навигация */
 .header-link {
-  color: var(--second-main-color);
+  color: var(--title-text-color);
 }
 
 /* контакты */
@@ -73,7 +95,7 @@ body {
 
 /*----------------------HERO----------------------*/
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 
 .hero-title {
@@ -83,7 +105,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--interactive-main-title);
 }
 
 .hero-btn {
@@ -92,8 +114,8 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  background-color: var(--btn-link-color);
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--interactive-main-title);
 }
 
 /*-----------------------ABOUT---------------------*/
@@ -104,7 +126,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--second-main-color);
+  color: var(--title-text-color);
 }
 
 .main-feature-text {
@@ -115,7 +137,7 @@ body {
 
 /* чем мы занимаемся */
 .main-specifics-title {
-  color: var(--second-main-color);
+  color: var(--title-text-color);
 }
 
 /*-----------------------TEAM---------------------*/
@@ -124,7 +146,7 @@ body {
   background-color: #f5f4fa;
 }
 .main-team-title {
-  color: var(--second-main-color);
+  color: var(--title-text-color);
 }
 
 .main-teamcard {
@@ -133,7 +155,7 @@ body {
   line-height: 1.18;
   /*text-align: center;*/
   letter-spacing: 0.03em;
-  color: var(--second-main-color);
+  color: var(--title-text-color);
 }
 
 .main-teamcard-text {
@@ -145,25 +167,53 @@ body {
 
 /*-----------------------FOOTER-------------------*/
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 
 .footer-logo-beginning {
-  color: var(--btn-link-color);
+  color: var(--accent-color);
 }
 
 .footer-logo-end {
-  color: #ffffff;
+  color: var(--interactive-main-title);
 }
 
 .footer-address-maps {
-  color: #ffffff;
+  color: var(--interactive-main-title);
 }
 
 .footer-contacts-mail {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contacts-color);
 }
 
 .footer-contacts-tel {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contacts-color);
+}
+
+/*-----------------------PORTFOLIO.HTML-------------------*/
+
+.portfolio-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+  color: var(--interactive-main-title);
+  background-color: var(--accent-color);
+}
+
+.portfolio-title {
+  color: var(--title-text-color);
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
