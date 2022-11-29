@@ -4,11 +4,14 @@
   --header-auth-color: #434455;
 
   --main-color: #2e2f42;
+  --main-btn-color: #f4f4fd;
+  --light-color-title-btn: #ffffff;
 }
 
 body {
   font-family: "Roboto", Tahoma, sans-serif;
   color: #434455;
+  background-color: #ffffff;
 }
 
 .link {
@@ -17,6 +20,23 @@ body {
 
 .list {
   list-style: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 /* -----------------------HEADER----------------------- */
@@ -82,7 +102,7 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
 
-  color: #ffffff;
+  color: var(--light-color-title-btn);
 }
 
 .hero-btn {
@@ -93,14 +113,13 @@ body {
   line-height: 1.18;
   letter-spacing: 0.04em;
 
-  color: #ffffff;
+  color: var(--light-color-title-btn);
   background-color: var(--accent-color);
-  cursor: pointer;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #616dee;
+  background-color: #404bbf;
 }
 
 /* --------ABOUT-------- */
@@ -130,7 +149,7 @@ body {
 /* ----------TEAM--------- */
 
 .team {
-  background-color: #f4f4fd;
+  background-color: var(--main-btn-color);
 }
 
 /* --------FOOTER-------- */
@@ -151,7 +170,7 @@ body {
 }
 
 .footer-logo-end {
-  color: #f4f4fd;
+  color: var(--main-btn-color);
 }
 
 .footer-text {
@@ -160,4 +179,26 @@ body {
   letter-spacing: 0.02em;
 
   color: #e7e9fc;
+}
+
+/* -----------------------------PORTFOLIO-------------------------- */
+
+.filter-btn {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: var(--accent-color);
+  background-color: var(--main-btn-color);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
 }
